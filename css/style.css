@@ -1,21 +1,55 @@
-body {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.box-1 {
+    width: 180px;
+    height: 80px;
+    background-color: #f44336;
+
+    /*  The value can be pixels  */
+    border-radius: 10px;
+}
+
+.box-2 {
+    width: 120px;
+    height: 120px;
+    background-color: #2196f3;
+
+    /*  The value can be percent  */
+    border-radius: 20%;
+}
+
+.box-3 {
+    width: 150px;
+    height: 50px;
+    background-color: #4caf50;
+
+    /*  If the block is a square, settings the radius to 50% will transform it to a circle  */
+    border-radius: 30%;
+}
+
+.box-1,
+.box-2 {
+    margin-bottom: 30px;
+}
+.link {
+    display: inline-block;
+    padding: 16px 32px;
+    margin-top: 20px;
+
+    border-radius: 15px;
+    background-color: teal;
+    color: white;
+
     font-family: sans-serif;
-    font-size: 36px;
-    padding: 1rem;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
 }
-
-/*  offset-x | offset-y | blur-radius | color  */
-.one {
-    color: blue;
-    text-decoration: underline wavy;
-    margin-bottom: 1rem;
-    text-shadow: 3px 3px 2px hsla(0, 0%, 0%, .5);
-}
-
-.rings {
-    color: orange;
-    text-shadow: -15px -8px 0 blue,
-        14px -8px 0 black,
-        29px 0 0 green,
-        44px -8px 0 red;
+.list-item:nth-child(2n) {
+    background-color: orange;
 }
