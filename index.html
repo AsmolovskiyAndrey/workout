@@ -12,35 +12,21 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="box">
-      <h3 class="text">Заголовок</h3>
-      <p class="text">Lorem ipsum dolor sit amet.</p>
-    </div>
-    <svg width="400" height="300" style="outline: 2px dashed #2a2a2a">
-      <line
-        x1="20"
-        y1="50"
-        x2="380"
-        y2="50"
-        stroke="#2a2a2a"
-        stroke-width="16"
-      />
-      <line
-        x1="20"
-        y1="80"
-        x2="310"
-        y2="80"
-        stroke="#2a2a2a"
-        stroke-width="6"
-      />
-      <line
-        x1="20"
-        y1="110"
-        x2="380"
-        y2="110"
-        stroke="#2a2a2a"
-        stroke-width="16"
-      />
-    </svg>
+    <form
+      name="signup_form"
+      autocomplete="off"
+      method="POST"
+      action="javascript:void(0);"
+    >
+      <label>
+        <span>Login</span>
+        <input type="text" name="login" placeholder=" " />
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" placeholder=" " />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
